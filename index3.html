@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 id="rs"></h1>
+<input type="number" id="c">
+<input type="number" id="d">
+<button onclick="tong()">Tong</button>
+<button onclick="hieu()">Hieu</button>
+<button onclick="tich()">Tich</button>
+<button onclick="thuong()">Thuong</button>
+
+
+<script>
+    function tong() {
+        let a = +document.getElementById('c').value;
+        let b = +document.getElementById('d').value;
+        document.getElementById('rs').innerHTML = 'tong la:' + (a + b);
+
+    }
+
+    function hieu() {
+        let a = +document.getElementById('c').value;
+        let b = +document.getElementById('d').value;
+        document.getElementById('rs').innerHTML = 'hieu la:' + (a - b);
+
+    }
+
+    function tich() {
+        let a = +document.getElementById('c').value;
+        let b = +document.getElementById('d').value;
+        document.getElementById('rs').innerHTML = 'hieu la:' + (a * b);
+
+    }
+
+    function thuong() {
+        let a = +document.getElementById('c').value;
+        let b = +document.getElementById('d').value;
+        document.getElementById('rs').innerHTML = 'hieu la:' + (a / b);
+
+    }
+
+</script>
+</body>
+</html>
